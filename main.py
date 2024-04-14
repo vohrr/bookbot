@@ -6,10 +6,10 @@ def main(filepath:str):
         letter_dictionary = create_dictionary(file_contents)
         print_report(word_count, letter_dictionary, filepath)
 
-def get_word_count(contents):
+def get_word_count(contents:str):
     return len(contents.split())
 
-def create_dictionary(contents):
+def create_dictionary(contents:str):
     lower_string = contents.lower()
     letter_dictionary = dict()
     for index in lower_string:
